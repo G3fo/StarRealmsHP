@@ -13,21 +13,19 @@
       crossorigin="anonymous"
     />
     <style>
-    
-    button{
-      margin: 8px;
-    }
-    
-    body{
-      margin-top: 10px;
-      overflow : hidden;
-    }
+      button {
+        margin: 8px;
+      }
 
-    .container{
-      margin-left: auto;
-      margin-right: auto;
-    }
+      body {
+        margin-top: 10px;
+        overflow: hidden;
+      }
 
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
 
@@ -35,7 +33,9 @@
     <div id="app">
       <div class="row container text-center">
         <div class="col content">
-          <button class="btn btn-success" v-on:click="player1 += 10">+10</button>
+          <button class="btn btn-success" v-on:click="player1 += 10">
+            +10
+          </button>
           <br />
           <button class="btn btn-success" v-on:click="player1 += 5">+5</button>
           <br />
@@ -55,7 +55,9 @@
         </div>
 
         <div class="col content">
-          <button class="btn btn-success" v-on:click="player2 += 10">+10</button>
+          <button class="btn btn-success" v-on:click="player2 += 10">
+            +10
+          </button>
           <br />
           <button class="btn btn-success" v-on:click="player2 += 5">+5</button>
           <br />
@@ -73,6 +75,94 @@
           <button class="btn btn-danger" v-on:click="player2 -= 10">-10</button>
           <br />
         </div>
+
+        <div class="col content">
+          <button class="btn btn-success" v-on:click="player3 += 10">
+            +10
+          </button>
+          <br />
+          <button class="btn btn-success" v-on:click="player3 += 5">+5</button>
+          <br />
+          <button class="btn btn-success" v-on:click="player3 += 1">+1</button>
+          <br />
+
+          <h1>
+            {{ player3 }}
+          </h1>
+
+          <button class="btn btn-danger" v-on:click="player3 -= 1">-1</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player3 -= 5">-5</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player3 -= 10">-10</button>
+          <br />
+        </div>
+
+        <div class="col content">
+          <button class="btn btn-success" v-on:click="player4 += 10">
+            +10
+          </button>
+          <br />
+          <button class="btn btn-success" v-on:click="player4 += 5">+5</button>
+          <br />
+          <button class="btn btn-success" v-on:click="player4 += 1">+1</button>
+          <br />
+
+          <h1>
+            {{ player4 }}
+          </h1>
+
+          <button class="btn btn-danger" v-on:click="player4 -= 1">-1</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player4 -= 5">-5</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player4 -= 10">-10</button>
+          <br />
+        </div>
+
+        <div class="col content">
+          <button class="btn btn-success" v-on:click="player5 += 10">
+            +10
+          </button>
+          <br />
+          <button class="btn btn-success" v-on:click="player5 += 5">+5</button>
+          <br />
+          <button class="btn btn-success" v-on:click="player5 += 1">+1</button>
+          <br />
+
+          <h1>
+            {{ player5 }}
+          </h1>
+
+          <button class="btn btn-danger" v-on:click="player5 -= 1">-1</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player5 -= 5">-5</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player5 -= 10">-10</button>
+          <br />
+        </div>
+
+        <div class="col content">
+          <button class="btn btn-success" v-on:click="player6 += 10">
+            +10
+          </button>
+          <br />
+          <button class="btn btn-success" v-on:click="player6 += 5">+5</button>
+          <br />
+          <button class="btn btn-success" v-on:click="player6 += 1">+1</button>
+          <br />
+
+          <h1>
+            {{ player6 }}
+          </h1>
+
+          <button class="btn btn-danger" v-on:click="player6 -= 1">-1</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player6 -= 5">-5</button>
+          <br />
+          <button class="btn btn-danger" v-on:click="player6 -= 10">-10</button>
+          <br />
+        </div>
       </div>
     </div>
   </body>
@@ -80,7 +170,14 @@
   <script>
     var app = new Vue({
       el: "#app",
-      data: { player1: 50, player2: 50 }
+      data: {
+        player1: 50,
+        player2: 50,
+        player3: 50,
+        player4: 50,
+        player5: 50,
+        player6: 50
+      }
     });
   </script>
   <script
