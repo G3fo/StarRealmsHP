@@ -15,6 +15,8 @@
     <style>
       button {
         margin: 8px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       body {
@@ -25,13 +27,18 @@
         margin-left: auto;
         margin-right: auto;
       }
+
+      .hide{
+        display: none;
+      }
+
     </style>
   </head>
 
   <body>
     <div id="app">
-      <div class="row container text-center">
-        <div class="col content">
+      <div id="row" class="row container text-center">
+        <div class="col content" id="player1">
           <button class="btn btn-success" v-on:click="player1 += 10">
             +10
           </button>
@@ -52,8 +59,7 @@
           <button class="btn btn-danger" v-on:click="player1 -= 10">-10</button>
           <br />
         </div>
-
-        <div class="col content">
+        <div class="col content hide" id="player2">
           <button class="btn btn-success" v-on:click="player2 += 10">
             +10
           </button>
@@ -75,7 +81,7 @@
           <br />
         </div>
 
-        <div class="col content">
+        <div class="col content hide" id="player3">
           <button class="btn btn-success" v-on:click="player3 += 10">
             +10
           </button>
@@ -97,7 +103,7 @@
           <br />
         </div>
 
-        <div class="col content">
+        <div class="col content hide" id="player4">
           <button class="btn btn-success" v-on:click="player4 += 10">
             +10
           </button>
@@ -118,21 +124,16 @@
           <button class="btn btn-danger" v-on:click="player4 -= 10">-10</button>
           <br />
         </div>
+        
+      <button class="btn btn-primary container add" onclick="addPlayer(1)">Add player</button>
+      <button class="btn btn-secondary container add" onclick="addPlayer(0)">Remove player</button>
       </div>
+
+
     </div>
   </body>
 
-  <script>
-    var app = new Vue({
-      el: "#app",
-      data: {
-        player1: 50,
-        player2: 50,
-        player3: 50,
-        player4: 50,
-      }
-    });
-  </script>
+  <script src="main.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
