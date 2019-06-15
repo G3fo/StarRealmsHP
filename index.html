@@ -19,7 +19,6 @@
 
       body {
         margin-top: 10px;
-        overflow: hidden;
       }
 
       .container {
@@ -119,50 +118,6 @@
           <button class="btn btn-danger" v-on:click="player4 -= 10">-10</button>
           <br />
         </div>
-
-        <div class="col content">
-          <button class="btn btn-success" v-on:click="player5 += 10">
-            +10
-          </button>
-          <br />
-          <button class="btn btn-success" v-on:click="player5 += 5">+5</button>
-          <br />
-          <button class="btn btn-success" v-on:click="player5 += 1">+1</button>
-          <br />
-
-          <h1>
-            {{ player5 }}
-          </h1>
-
-          <button class="btn btn-danger" v-on:click="player5 -= 1">-1</button>
-          <br />
-          <button class="btn btn-danger" v-on:click="player5 -= 5">-5</button>
-          <br />
-          <button class="btn btn-danger" v-on:click="player5 -= 10">-10</button>
-          <br />
-        </div>
-
-        <div class="col content">
-          <button class="btn btn-success" v-on:click="player6 += 10">
-            +10
-          </button>
-          <br />
-          <button class="btn btn-success" v-on:click="player6 += 5">+5</button>
-          <br />
-          <button class="btn btn-success" v-on:click="player6 += 1">+1</button>
-          <br />
-
-          <h1>
-            {{ player6 }}
-          </h1>
-
-          <button class="btn btn-danger" v-on:click="player6 -= 1">-1</button>
-          <br />
-          <button class="btn btn-danger" v-on:click="player6 -= 5">-5</button>
-          <br />
-          <button class="btn btn-danger" v-on:click="player6 -= 10">-10</button>
-          <br />
-        </div>
       </div>
     </div>
   </body>
@@ -175,8 +130,6 @@
         player2: 50,
         player3: 50,
         player4: 50,
-        player5: 50,
-        player6: 50
       }
     });
   </script>
