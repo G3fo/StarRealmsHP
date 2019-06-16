@@ -1,6 +1,11 @@
 var i = 2;
 var content = document.getElementById("row").innerHTML;
 
+
+window.addEventListener('load', function(e) {
+  setTimeout(function() { window.scrollTo(0, 1); }, 1);
+}, false);
+
 function addPlayer(add) {
   i > 4 ? (i = 4) : "";
   i < 1 ? (i = 1) : "";
