@@ -41,7 +41,7 @@
     <div id="app">
       <div id="row" class="row container text-center">
         <div class="col content" id="player1">
-          <button class="btn btn-success" v-on:click="player1 += 1">+1</button>
+          <button class="btn btn-success" v-on:click="player1 += 1">^</button>
           <br />
 
           <h1>
@@ -49,17 +49,12 @@
           </h1>
           <h3>{{ player1name }}</h3>
 
-          <button class="btn btn-danger" v-on:click="player1 -= 1">-1</button>
+          <button class="btn btn-danger" v-on:click="player1 -= 1">v</button>
           <br />
-          <input
-            v-model="player1name"
-            class="form-control"
-            placeholder="Name..."
-          />
         </div>
 
         <div class="col content hide" id="player2">
-          <button class="btn btn-success" v-on:click="player2 += 1">+1</button>
+          <button class="btn btn-success" v-on:click="player2 += 1">^</button>
           <br />
 
           <h1>
@@ -68,23 +63,11 @@
 
           <h3>{{ player2name }}</h3>
 
-          <button class="btn btn-danger" v-on:click="player2 -= 1">-1</button>
+          <button class="btn btn-danger" v-on:click="player2 -= 1">v</button>
           <br />
-
-          <input
-            v-model="player2name"
-            class="form-control"
-            placeholder="Name..."
-          />
         </div>
 
         <div class="col content hide" id="player3">
-          <button class="btn btn-success" v-on:click="player3 += 10">
-            +10
-          </button>
-          <br />
-          <button class="btn btn-success" v-on:click="player3 += 5">+5</button>
-          <br />
           <button class="btn btn-success" v-on:click="player3 += 1">+1</button>
           <br />
 
@@ -95,24 +78,9 @@
 
           <button class="btn btn-danger" v-on:click="player3 -= 1">-1</button>
           <br />
-          <button class="btn btn-danger" v-on:click="player3 -= 5">-5</button>
-          <br />
-          <button class="btn btn-danger" v-on:click="player3 -= 10">-10</button>
-          <br />
-          <input
-            v-model="player3name"
-            class="form-control"
-            placeholder="Name..."
-          />
         </div>
 
         <div class="col content hide" id="player4">
-          <button class="btn btn-success" v-on:click="player4 += 10">
-            +10
-          </button>
-          <br />
-          <button class="btn btn-success" v-on:click="player4 += 5">+5</button>
-          <br />
           <button class="btn btn-success" v-on:click="player4 += 1">+1</button>
           <br />
 
@@ -123,15 +91,6 @@
 
           <button class="btn btn-danger" v-on:click="player4 -= 1">-1</button>
           <br />
-          <button class="btn btn-danger" v-on:click="player4 -= 5">-5</button>
-          <br />
-          <button class="btn btn-danger" v-on:click="player4 -= 10">-10</button>
-          <br />
-          <input
-            v-model="player4name"
-            class="form-control"
-            placeholder="Name..."
-          />
         </div>
 
         <button class="btn btn-primary container add" onclick="addPlayer(1)">
@@ -140,6 +99,27 @@
         <button class="btn btn-secondary container add" onclick="addPlayer(0)">
           Remove player
         </button>
+
+        <input
+          v-model="player1name"
+          class="form-control"
+          placeholder="Player 1 Name..."
+        />
+        <input
+          v-model="player2name"
+          class="form-control"
+          placeholder="Player 2 Name..."
+        />
+        <input
+          v-model="player3name"
+          class="form-control"
+          placeholder="Player 3 Name..."
+        />
+        <input
+          v-model="player4name"
+          class="form-control"
+          placeholder="Player 4 Name..."
+        />
       </div>
     </div>
   </body>
