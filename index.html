@@ -12,6 +12,9 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <style>
       button {
         margin: 8px;
@@ -38,7 +41,6 @@
     <div id="app">
       <div id="row" class="row container text-center">
         <div class="col content" id="player1">
-
           <button class="btn btn-success" v-on:click="player1 += 10">
             +10
           </button>
@@ -59,7 +61,11 @@
           <br />
           <button class="btn btn-danger" v-on:click="player1 -= 10">-10</button>
           <br />
-          <input v-model="player1name" class="form-control" placeholder="Name..." />
+          <input
+            v-model="player1name"
+            class="form-control"
+            placeholder="Name..."
+          />
         </div>
 
         <div class="col content hide" id="player2">
@@ -84,7 +90,11 @@
           <br />
           <button class="btn btn-danger" v-on:click="player2 -= 10">-10</button>
           <br />
-          <input v-model="player2name" class="form-control" placeholder="Name..." />
+          <input
+            v-model="player2name"
+            class="form-control"
+            placeholder="Name..."
+          />
         </div>
 
         <div class="col content hide" id="player3">
@@ -99,7 +109,6 @@
 
           <h1>
             {{ player3 }}
-
           </h1>
           <h3>{{ player3name }}</h3>
 
@@ -109,7 +118,11 @@
           <br />
           <button class="btn btn-danger" v-on:click="player3 -= 10">-10</button>
           <br />
-          <input v-model="player3name" class="form-control" placeholder="Name..." />
+          <input
+            v-model="player3name"
+            class="form-control"
+            placeholder="Name..."
+          />
         </div>
 
         <div class="col content hide" id="player4">
@@ -133,7 +146,11 @@
           <br />
           <button class="btn btn-danger" v-on:click="player4 -= 10">-10</button>
           <br />
-          <input v-model="player4name"class="form-control" placeholder="Name..." />
+          <input
+            v-model="player4name"
+            class="form-control"
+            placeholder="Name..."
+          />
         </div>
 
         <button class="btn btn-primary container add" onclick="addPlayer(1)">
