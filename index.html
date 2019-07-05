@@ -12,7 +12,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <style>
@@ -68,7 +67,7 @@
         </div>
 
         <div class="col content hide" id="player3">
-          <button class="btn btn-success" v-on:click="player3 += 1">+1</button>
+          <button class="btn btn-success" v-on:click="player3 += 1">^</button>
           <br />
 
           <h1>
@@ -76,12 +75,12 @@
           </h1>
           <h3>{{ player3name }}</h3>
 
-          <button class="btn btn-danger" v-on:click="player3 -= 1">-1</button>
+          <button class="btn btn-danger" v-on:click="player3 -= 1">v</button>
           <br />
         </div>
 
         <div class="col content hide" id="player4">
-          <button class="btn btn-success" v-on:click="player4 += 1">+1</button>
+          <button class="btn btn-success" v-on:click="player4 += 1">^</button>
           <br />
 
           <h1>
@@ -89,7 +88,7 @@
           </h1>
           <h3>{{ player4name }}</h3>
 
-          <button class="btn btn-danger" v-on:click="player4 -= 1">-1</button>
+          <button class="btn btn-danger" v-on:click="player4 -= 1">v</button>
           <br />
         </div>
 
