@@ -19,6 +19,8 @@
         margin: 8px;
         margin-left: auto;
         margin-right: auto;
+        height: 20%;
+        width: 20%;
       }
 
       body {
@@ -36,6 +38,10 @@
 
       h1 {
         background-image: url();
+      }
+
+      #addPlayer {
+        margin-top: 20%;
       }
     </style>
   </head>
@@ -94,9 +100,14 @@
 
           <button class="btn btn-danger" v-on:click="player4 -= 1">v</button>
           <br />
+          <br /><br /><br />
         </div>
 
-        <button class="btn btn-primary container add" onclick="addPlayer(1)">
+        <button
+          id="addPlayer"
+          class="btn btn-primary container add"
+          onclick="addPlayer(1)"
+        >
           Add player
         </button>
         <button class="btn btn-secondary container add" onclick="addPlayer(0)">
